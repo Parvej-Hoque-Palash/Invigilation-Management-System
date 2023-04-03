@@ -526,3 +526,12 @@ def examRoutine(request):
 def showTeachersDutyList(request):
     dutyList = teacherCount.objects.all()
     return render(request,"authentication/showTeachersDutyList.html",{'dutyList':dutyList})
+
+def showYourDuty(request,username):
+    teachers = teacher.objects.get(userName = username)
+    routines = routine.objects.filter(teachers= teachers)
+    teachers ={
+                'teachers':teachers,
+                'routines':routines
+            }
+    return render(request, "authentication/teacherPage.html",teachers)

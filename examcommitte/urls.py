@@ -33,4 +33,5 @@ urlpatterns = [
     path('invigilatorsList',views.invigilatorsList, name="invigilatorsList"),
     path('examRoutine',views.examRoutine, name="examRoutine"),
     path('showTeachersDutyList',views.showTeachersDutyList, name="showTeachersDutyList"),
+    path('showYourDuty/<str:username>',views.showYourDuty, name="showTeachersDutyList"),
 ]
