@@ -1,0 +1,42 @@
+.examCommitte_body {
+    margin-bottom: 50px;
+  }
+  .committee {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    row-gap: 30px;
+    padding: 20px;
+    margin: auto;
+  }
+  .committee button {
+    padding: 10px;
+    background-color: black;
+    font-size: 20px;
+    border-radius: 8px;
+    box-shadow: 8px 8px 3px lightblue;
+  }
+  .committee button:hover{
+    opacity: 0.7;
+    box-shadow: 6px 6px 2px lightblue;
+  }
+  
+  .committee button a {
+    color: white;
+    text-decoration: none;
+  }
+  .examCommitte_body h1 {
+    border: 3px solid lightblue;
+    color: white;
+    width: 20%;
+    padding: 10px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    box-shadow: 10px 10px 5px lightblue;
+  }
+  
+  button:hover{
+    cursor:pointer;
+    background-color:rgba(0, 0, 0, 0.7);
+  }

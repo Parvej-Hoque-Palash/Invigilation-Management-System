@@ -3,6 +3,7 @@
 <html>
   <head>
     <title>Invigilation Management System</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'navbar.css' %}" />
     <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}" />
     <link rel="stylesheet" type="text/css" href="{% static 'footer.css' %}" />
     <link
@@ -17,7 +18,7 @@
         background-color: rgba(10, 10, 10, 0.823);
         background-blend-mode: multiply;
         background-image: url("{% static "/images/counter.jpg" %}");
-        background-repeat: no-repeat;
+        background-repeat : no-repeat;
         background-size: 100%;
         color: white;
         height: 70vh;
@@ -46,7 +47,7 @@
           <a class="nav-btn" href="/teachersList">Teachers List</a>
         </button>
         <button>
-          <a class="nav-btn" href="/invisilatorsList">Invisilators List</a>
+          <a class="nav-btn" href="/invigilatorsList">Invigilators List</a>
         </button>
         <button>
           <a class="nav-btn" href="/examRoutine">Exam Routine</a>
@@ -57,6 +58,7 @@
         <button><a class="nav-btn" href="/signup">Register</a></button>
       </nav>
     </header>
+    {% block content %}
     <main>
       <div class="base__display">
         <div class="slider">
@@ -84,6 +86,7 @@
     </div>
     <script src="{% static '/count.js' %}"></script>
   </section>
+  {% endblock %}
 
   <footer class="footer-distributed">
     <div class="footer-left">

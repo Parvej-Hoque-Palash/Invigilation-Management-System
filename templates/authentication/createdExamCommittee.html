@@ -1,4 +1,8 @@
+{% extends 'authentication/loginPage.html' %}
+
 {% load static %}
+
+{% block content %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7,9 +11,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link
-      rel="stylesheet "
-      type="text/css"
-      href="{% static 'createdExamCommittee.css' %}"
+    rel="stylesheet "
+    type="text/css"
+    href="{% static 'createdExamCommittee.css' %}"
     />
   </head>
   <body>
@@ -35,4 +39,6 @@
       </table>
     </div>
   </body>
-</html>
+  </html>
+  
+  {% endblock %}

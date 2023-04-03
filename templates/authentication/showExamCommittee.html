@@ -1,4 +1,8 @@
+{% extends 'authentication/loginPage.html' %}
+
 {% load static %}
+
+{% block content %}
 <html>
   <head>
     <link
@@ -8,6 +12,7 @@
     />
   </head>
   <body>
+    <div class="show_ExamCommittee">
     <h1>Exam Committee Members List</h1>
     <div class="teacherListParent">
       {%for teacher in examcommittee%}
@@ -20,5 +25,7 @@
       </div>
       {%endfor%}
     </div>
+  </div>
   </body>
 </html>
+{% endblock %}

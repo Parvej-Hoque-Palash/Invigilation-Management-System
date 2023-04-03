@@ -1,4 +1,23 @@
-.teacherList {
+.show_ExamCommittee{
+  margin-bottom: 50px;
+}
+.show_ExamCommittee h1 {
+  border: 3px solid lightblue;
+  color: white;
+  width: 40%;
+  padding: 10px;
+  margin: auto;
+  margin-top: 80px;
+  margin-bottom: 30px;
+  box-shadow: 6px 6px 2px lightblue;
+}
+.show_ExamCommittee .teacherListParent {
+  display: flex;
+  column-gap: 40px;
+  row-gap: 40px;
+  flex-wrap: wrap;
+}
+.teacherListParent .teacherList {
   border: 1px solid black;
   width: 25%;
   padding: 20px;
@@ -6,22 +25,4 @@
   color: white;
   box-shadow: 10px 10px 5px lightblue;
   margin: auto;
-}
-.teacherListParent {
-  display: flex;
-  column-gap: 40px;
-  row-gap: 40px;
-  flex-wrap: wrap;
-}
-h1 {
-  border: 3px solid lightblue;
-  width: 40%;
-  padding: 10px;
-  margin: auto;
-  margin-top: 80px;
-  margin-bottom: 30px;
-  box-shadow: 10px 10px 5px lightblue;
-}
-.header {
-  color: lightblue;
 }

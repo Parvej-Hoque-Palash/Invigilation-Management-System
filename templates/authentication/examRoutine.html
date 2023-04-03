@@ -1,4 +1,8 @@
+{% extends 'authentication/index.html' %}
+
 {% load static %}
+
+{% block content %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -9,11 +13,11 @@
     <link
       rel="stylesheet "
       type="text/css"
-      href="{% static 'createdExamCommittee.css' %}"
+      href="{% static 'examRoutine.css' %}"
     />
   </head>
   <body>
-    <div class="table">
+    <div class="examRoutine_table">
       <table class="my_table">
         <caption>
           <h3>1st Year Exam Routine </h3>
@@ -43,9 +47,9 @@
       </table>
     </div>
 
-    <div class="table">
-        <table class="my_table">
-          <caption>
+    <div class="examRoutine_table">
+      <table class="my_table">
+        <caption>
             <h3>2nd Year Exam Routine</h3>
           </caption>
           <thead>
@@ -73,7 +77,7 @@
         </table>
       </div>
 
-      <div class="table">
+      <div class="examRoutine_table">
         <table class="my_table">
           <caption>
             <h3>3rd Year Exam Routine </h3>
@@ -103,7 +107,7 @@
         </table>
       </div>
 
-      <div class="table">
+      <div class="examRoutine_table">
         <table class="my_table">
           <caption>
             <h3>4th Year Exam Routine </h3>
@@ -134,3 +138,5 @@
       </div>
   </body>
 </html>
+
+{% endblock %}

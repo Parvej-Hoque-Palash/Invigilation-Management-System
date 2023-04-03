@@ -1,0 +1,32 @@
+{% extends 'authentication/index.html' %}
+
+{% load static %}
+
+{% block content %}
+<html>
+  <head>
+    <link rel="stylesheet" href="{% static 'invigilatorList.css' %}">
+  </head>
+  <body>
+    <div class="invigilators_table">
+      <table class="my__table">
+        <thead>
+          <tr>
+            <th>Invigilators Name</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for invigilator in invigilators%}
+          <tr>
+            <td>
+            {{invigilator.firstName}} {{invigilator.lastName}}
+          </td>
+        </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+  </div>
+  </body>
+</html>
+
+{% endblock %}

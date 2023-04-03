@@ -1,9 +1,17 @@
+{% extends 'authentication/loginPage.html' %}
+
+{% load static %}
+
+{% block content %}
 <html>
-  <head> </head>
+  <head>
+    <link rel="stylesheet " type="text/css" href="{% static 'showTeachersDutyList.css' %}">
+  </head>
   <body>
-    <table>
+    <div class="dutyList_table"></div>
+    <table class="my_table">
       <caption>
-        <h3>No of invisilation for each teacher</h3>
+        <h2>No of invisilation for each teacher</h2>
       </caption>
       <thead>
         <tr>
@@ -23,3 +31,4 @@
   </body>
   <html></html>
 </html>
+{% endblock %}

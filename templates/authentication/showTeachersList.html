@@ -1,6 +1,8 @@
-<!-- @format -->
+{% extends 'authentication/index.html' %}
 
 {% load static %}
+
+{% block content %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -11,23 +13,23 @@
     <link rel="stylesheet" href="{% static 'showTeacherList.css' %}" />
   </head>
   <body>
-    <header></header>
     <main>
+      <div class="allTeachersList">
       <h1>All Teachers List</h1>
       <div class="user">
         {%for teacher in teachers%}
         <div class="username">
           <div class="profile_description">
             <img
-              class="profile_picture"
-              src="{% static '/images/teacherCartoon.jpg' %}"
-              alt=""
+            class="profile_picture"
+            src="{% static '/images/teacherCartoon.jpg' %}"
+            alt=""
             />
             <h2>{{teacher.userName}}</h2>
           </div>
           <div class="profile_data">
             <h3>Teacher ID: {{teacher.teacherID}}</h3>
-            <h3>Name: {{teacher.firstName}}</h3>
+            <h3>Name: {{teacher.firstName}} {{teacher.lastName}}</h3>
             <h3>Email : {{teacher.email}}</h3>
             <h3>Exam Committee No : {{teacher.isCommittee}}</h3>
             <h3>Head Of ExamCommittee: {{teacher.isHeadOfCommittee}}</h3>
@@ -35,6 +37,8 @@
         </div>
         {%endfor%}
       </div>
+    </div>
     </main>
   </body>
-</html>
+  </html>
+  {% endblock %}

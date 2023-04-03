@@ -15,7 +15,6 @@ from django.db.models import Q
 def home(request):
     return render(request, "authentication/index.html")
 
-
 def signup(request):
     if request.method == "POST":
         id = request.POST.get('id')
@@ -507,9 +506,9 @@ def showRoutine4(request):
     routines = routine.objects.filter(semester="4")
     return render(request,'authentication/showRoutine4.html',{'routines':routines})
 
-def invisilatorsList(request):
-    invisilators = teacherCount.objects.all()
-    return render(request,"authentication/invisilatorList.html",{'invisilators':invisilators})
+def invigilatorsList(request):
+    invigilators = teacherCount.objects.all()
+    return render(request,"authentication/invigilatorList.html",{'invigilators':invigilators})
 
 def examRoutine(request):
     firstYear = routine.objects.filter(semester="1")

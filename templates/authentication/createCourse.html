@@ -1,24 +1,15 @@
+{% extends 'authentication/loginPage.html' %}
+
 {% load static %}
+
+{% block content %}
 <html>
   <head>
     <title>Create Course</title>
-    <link rel="stylesheet " type="text/css" href="{% static 'signup.css' %}" />
-    <style>
-      input {
-        padding: 10px;
-      }
-      label {
-        font-size: 20px;
-      }
-      button {
-        color: white;
-      }
-      button:hover {
-        cursor: pointer;
-      }
-    </style>
+    <link rel="stylesheet " type="text/css" href="{% static 'createCourse.css' %}" />
   </head>
   <body>
+    <div class="createCourse__body">
     {% for message in messages %}
     <div
       class="alert alert-{{ message.tags }} alert-dismissible fade show"
@@ -35,10 +26,11 @@
       </button>
     </div>
     {% endfor %}
+    <div class="container">
     <h1>Create Course</h1>
     <p>Please fill out this form with the required information</p>
 
-    <form action="/createCourse" method="post">
+    <form class="course_form" action="/createCourse" method="post">
       {% csrf_token %}
       <label for="">Course Code </label>
       <input
@@ -88,5 +80,8 @@
 
       <button type="submit">Create</button>
     </form>
+  </div>
+  </div>
   </body>
 </html>
+{% endblock %}

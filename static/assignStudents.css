@@ -1,0 +1,61 @@
+
+.assign__container{
+    color: #f5f6f7;
+    margin-bottom: 70px;
+  }
+  .assign__container h1, p {
+    margin: 1em auto;
+    text-align: center;
+  }
+  .assign__container .assign_form{
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 15px auto;
+    padding-bottom: 2em;
+    background-color: rgb(136, 136, 136);
+    padding: 20px 15px 50px 15px;
+    border-radius: 8px;
+  }
+  .assign__container .assign_form fieldset {
+    border: none;
+    padding: 2rem 0;
+    border-bottom: 3px solid #3b3b4f;
+  }
+  .assign__container .assign_form fieldset:last-of-type {
+    border-bottom: none;
+  }
+  
+  .assign__container .assign_form label {
+    display: block;
+    margin: 0.5rem 0;
+  }
+  
+  .assign__container .assign_form input,
+  textarea,
+  select {
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 3em;
+    border-radius: 8px;
+  }
+  
+  .assign__container .assign_form input, textarea {
+    background-color: #0a0a23;
+    border: 1px solid #0a0a23;
+    color: #ffffff;
+  }
+  .assign__container .assign_form button{
+    margin-top: 8px;
+  border-radius: 3px;
+  background-color:  #ff8d1e;
+  color: #ffffff;
+  border: 0;
+  padding: 10px 20px;
+  font-weight: bold;
+  float: right;
+  }
+  .assign__container .assign_form button:hover {
+  background-color: #00a0e0;
+  color: #ffffff;
+  }

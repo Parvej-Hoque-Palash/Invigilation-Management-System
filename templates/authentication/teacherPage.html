@@ -1,4 +1,8 @@
+{% extends 'authentication/loginPage.html' %}
+
 {% load static %}
+
+{% block content %}
 <html>
     <head>
         <link
@@ -6,19 +10,31 @@
       type="text/css"
       href="{% static 'createdExamCommittee.css' %}"
     />
-    </head>
-    <body>
-        <div>
+    <link
+      rel="stylesheet "
+      type="text/css"
+      href="{% static 'teacherProfile.css' %}"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+      <div class="base_container">
+      <div class="card">
         <h1>Profile </h1>
-        <h1>User Name:  {{teachers.firstName}} </h1>
+        <h1 class="title">User Name:  {{teachers.firstName}} </h1>
         <h2>Name : {{teachers.firstName}} {{teachers.lastName}}</h1>
         <h2>Email : {{teachers.email}}</h2>
-        </div>
+        <a href="#"><i class="fa fa-dribbble"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <p><button class="contact_btn">Contact</button></p>
+      </div>
         <div>
             <div class="table">
                 <table class="my_table">
                   <caption>
-                    <h3>Your invisilation date</h1>
+                    <h3>Your Invigilation Date</h1>
                   </caption>
                   <thead>
                     <tr>
@@ -44,5 +60,7 @@
                   </tbody>
                 </table>
               </div>
+            </div>
     </body>
 </html>
+{% endblock %}

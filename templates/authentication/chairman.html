@@ -1,9 +1,14 @@
+{% extends 'authentication/loginPage.html' %}
+
 {% load static %}
+
+{% block content %}
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="{% static 'chairman.css' %}" />
   </head>
-  <body class="body">
+  <body>
+    <div class="chairman_body">
     <div class="chairman">
       <button><a href="/createexamcommittee">Create Exam Committee</a></button>
       <button><a href="/assignStudents">Assign Students</a></button>
@@ -22,5 +27,8 @@
       </div>
       {%endfor%}
     </div>
+  </div>
   </body>
-</html>
+  </html>
+  
+  {% endblock %}
